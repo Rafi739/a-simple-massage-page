@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A simple massage page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="full-body">
+      <div class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="res">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">icon</a></li>
+        </ul>
+        <div class="container" onclick="myFunction()">
+          <i id="cng" class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="message">
+        <h1>Hi, I'm Rahuman Arif Rafi</h1>
+        <p>
+          I'm on a journey to become a front-end web developer. I love building
+          little projects, trying out new coding techniques, and sharing what I
+          learn along the way. When I'm not at my desk, you'll find me reading,
+          hiking through the mountains, or challenging myself on rock-climbing
+          walls.
+        </p>
+        <p>
+          I started this blog to document my progress, keep myself accountable,
+          and hopefully inspire anyone else who's learning to code. Welcome to
+          my corner of the internet, and thanks for stopping by!
+        </p>
+
+        <div class="icon">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <i class="fa-brands fa-square-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+
+    <script>
+      var myIcon = false;
+      function myFunction() {
+        myIcon = !myIcon;
+        var icon = document.querySelector("#cng");
+        var menu = document.querySelector(".container");
+        var navbar = document.querySelector(".res");
+
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("open");
+        if (myIcon) {
+          cng.className = "fa-solid fa-xmark";
+        } else {
+          cng.className = "fa-solid fa-bars";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
